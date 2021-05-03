@@ -10,7 +10,7 @@
 2) Déplacer le dossier compressé dans le dossier du serveur local (htdocs ou www)
 3) Ouvrir l'invite de commande depuis ce dossier
 4) Se connecter au serveur web interne de PHP<br>
-<pre><code>..\agenceimmobiliere>php -S localhost:8000 -d display_errors=1 -t public</code></pre>
+<pre><code>php -S localhost:8000 -d display_errors=1 -t public</code></pre>
 
 # Identifiant de la partie admin
 La partie admin servira à insérer, modifier, supprimer un bien.<br>
