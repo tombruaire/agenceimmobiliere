@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title biens.titre %}
+
+{% block body %}
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+            </div>
+            <div class="col-md-4">
+                <h1>{{ biens.titre }}</h1>
+                <h2>{{ biens.nbPieces }} pièces - {{ biens.surface }} m²</h2>
+                <div class="text-primary" style="font-size: 4rem; font-weight: bold;">{{ biens.formattedPrice }} €</div>
+                <a href="#" class="btn btn-primary">Contacter l'agence</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-4">
+
+    <p>{{ biens.description | nl2br }}</p>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Caractéristiques</h2>
+            <table class="table table-striped">
+                <tr>
+                    <td>Surface habitable</td>
+                    <td>{{ biens.surface }} m²</td>
+                </tr>
+                <tr>
+                    <td>Nombre de pièces</td>
+                    <td>{{ biens.nbPieces }}</td>
+                </tr>
+                <tr>
+                    <td>Nombre de chambres</td>
+                    <td>{{ biens.nbChambres }}</td>
+                </tr>
+                <tr>
+                    <td>Étage</td>
+                    <td>{{ biens.etages }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <h2>Spécificités</h2>
+        </div>
+    </div>
+
+    <!--
+    <nav class="nav nav-tabs" id="tab">
+        /
+    </nav> -->
+</div>
+{% endblock %}

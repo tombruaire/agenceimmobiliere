@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Agence immobilière' %}
+
+{% block body %}
+<div class="jumbotron text-center">
+    <h1>Trouvez votre chez-vous</h1>
+    <p style="font-size: 14pt;">N°1 de la confiance depuis 10 ans avec 18 986 annonces immobilières</p>
+    <a href="{{ path('biens.index') }}" class="btn btn-primary"> Rechercher un bien</a>
+</div>
+
+<div class="container">
+    <h2>Les derniers biens</h2>
+    <div class="row flex">
+        {% for biens in lesbiens %}
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="{{ path('biens.show', {id: biens.id, slug: biens.slug}) }}">{{ biens.titre }}</a>
+                        </h5>
+                        <p class="card-text">{{ biens.ville }} ({{ biens.ville }})</p>
+                        <div class="text-primary" style="font-weight: bold;font-size: 2rem;">{{ biens.formattedPrice }} €</div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

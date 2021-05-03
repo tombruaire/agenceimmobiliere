@@ -1,0 +1,22 @@
+{{ form_start(form) }}
+<div class="row">
+    <div class="col-md-4">{{ form_row(form.titre) }}</div>
+    <div class="col-md-4">{{ form_row(form.surface) }}</div>
+    <div class="col-md-4">{{ form_row(form.prix) }}</div>
+</div>
+<div class="row">
+    <div class="col-md-2">{{ form_row(form.nbPieces) }}</div>
+    <div class="col-md-2">{{ form_row(form.nbChambres) }}</div>
+    <div class="col-md-2">{{ form_row(form.etages) }}</div>
+</div>
+<div class="row">
+    <div class="col-md-2">{{ form_row(form.cp) }}</div>
+    <div class="col-md-2">{{ form_row(form.ville) }}</div>
+    <div class="col-md-4">{{ form_row(form.adresse) }}</div>
+    <div class="col-md-2">{{ form_row(form.vendu) }}</div>
+</div>
+{{ form_rest(form) }}
+<div class="flex text-center mb-5">
+    <button class="btn btn-lg btn-success">{{ button|default('Ajouter') }}</button>
+</div>
+{{ form_end(form) }}
