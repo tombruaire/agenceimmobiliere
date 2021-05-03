@@ -7,6 +7,10 @@
 
         <h1>Gérer les biens</h1>
 
+        <div class="text-right mb-3">
+            <a href="{{ path('admin.biens.new') }}" class="btn btn-primary">+ Ajouter un nouveau bien</a>
+        </div>
+
         {% for message in app.flashes('success') %}
             <div class="alert alert-success">
                 <div class="alert-message">
@@ -38,10 +42,6 @@
             {% endfor %}
             </tbody>
         </table>
-
-        <div class="text-right">
-            <a href="{{ path('admin.biens.new') }}" class="btn btn-primary">Ajouter un nouveau bien</a>
-        </div>
 
     </div>
 {% endblock %}
