@@ -11,3 +11,9 @@
 3) Ouvrir l'invite de commande depuis ce dossier
 4) Se connecter au serveur web interne de PHP<br>
 <pre><code>php -S localhost:8000 -d display_errors=1 -t public</code></pre>
+
+# Identifiant de la partie admin
+La partie admin servira à insérer, modifier, supprimer un bien.<br>
+<b>Lien du formulaire de connexion</b> : http://localhost:8000/admin <br>
+<b>Pseudo</b> : demo<br>
+<b>Mot de passe</b> : demo<br>
