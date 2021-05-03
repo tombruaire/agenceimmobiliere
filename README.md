@@ -15,5 +15,5 @@
 # Identifiant de la partie admin
 La partie admin servira à insérer, modifier, supprimer un bien.<br>
 <b>Lien du formulaire de connexion</b> : http://localhost:8000/admin <br>
-<b>Nom d'utilisateur</b> : demo<br>
-<b>Mot de passe</b> : demo<br>
+<b>Nom d'utilisateur</b> : tombruaire<br>
+<b>Mot de passe</b> : root456<br>
